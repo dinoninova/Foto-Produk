@@ -1,0 +1,47 @@
+package belajarrrrrrrrrrrrrrrrrrrr;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author LAPTOP-HP
+ */
+public class FotoProduk {
+    public static void main(String[] args) {
+        Scanner input = new Scanner (System.in);
+        int harga = 0, kembalian;
+        
+        System.out.println("Selamat datang di jasa fotografer");
+        System.out.println("silahkan pilih jasa yang kami sediakan");
+        System.out.println("1. jasa foto makanan 15 foto, Rp. 30000");
+        System.out.println("2. jasa foto minuman 15 foto, Rp. 30000");
+        System.out.println("3. jasa foto prewed 5 foto, Rp. 50000");
+        System.out.println("4. jada fot ijazah 5 foto, Rp. 25000");
+        harga = input.nextInt();
+        
+        
+        switch (harga){
+            case 1 : harga = 30000;break;
+            case 2 : harga = 30000;break;
+            case 3 : harga = 50000;break;
+            case 4 : harga = 25000;break;
+        }
+            
+            System.out.println("Masukkan uang anda : ");
+            int uang=input.nextInt();
+            
+            
+            
+           if (uang>=harga){
+               kembalian = uang-harga;
+               System.out.println("Kembalian anda :"+kembalian);
+           }else if (uang < harga){
+               System.out.println("Maaf uang anda kurang");
+           }
+            
+        }
+        
+        
+                
+                
+    }
